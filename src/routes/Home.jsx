@@ -16,7 +16,7 @@ export default function Home() {
     if(heroes) {
         cards = heroes.map((hero) => (
             <Card 
-                name={hero.name} 
+                name={hero.name}
                 id={hero.id} 
                 key={hero.id} 
                 thumbnail={`${hero.thumbnail.path}/${IMAGE_SIZE}.${hero.thumbnail.extension}`}
