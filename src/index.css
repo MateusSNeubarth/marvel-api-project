@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Roboto, "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -24,6 +25,10 @@ p {
 li {
   list-style: none;
 }
+li:hover {
+  background-color: #fff;
+  color: #202020;
+}
 
 a,
 a:visited {
@@ -31,8 +36,9 @@ a:visited {
   color: inherit;
 }
 
+
 button {
-  background-color: rgb(69, 126, 249);
+  background-color: #E81414;
   color: white;
   font-size: 1rem;
   font-weight: 700;
@@ -75,11 +81,24 @@ form input {
   gap: 4rem;
 }
 
-header {
-  min-width: 100%;
-  background-color: white;
+.navbar_list {
+  float: right;
 }
 
+.navbar_list_items {
+  list-style: none;
+  color: #fff;
+}
+
+header {
+  min-width: 100%;
+  background-color: #202020;
+}
+
+.logo_nav {
+  float: left;
+  height: 3rem;
+}
 /* Container */
 .container {
   width: min(90%, 45rem);
@@ -166,4 +185,8 @@ header {
 .footer {
   text-align: center;
   margin-top: 10rem;
+}
+
+.github {
+  text-decoration: underline;
 }
