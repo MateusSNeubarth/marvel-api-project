@@ -24,7 +24,7 @@ export default function HeroDetails() {
         fetchHero(id)
         .then((data) => setHero(data))
         .catch((err) => console.error(err))
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     if(hero) {
         name = hero.data.results[0].name;
