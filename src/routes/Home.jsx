@@ -28,7 +28,7 @@ export default function Home() {
         <h1>Discover Marvel Heroes</h1>
         <SearchBar setter={setHeroes}/>
         <Grid>
-            {cards ? cards : null}
+            {cards ? cards : <p>No heroes found with this name</p>}
         </Grid>
     </Container>
     )

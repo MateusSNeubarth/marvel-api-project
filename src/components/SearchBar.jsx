@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 
 // import utils
-import { fetchHeroes } from "../utils/utils";
+import { fetchHeroes } from "../utils/utils.js";
 
 export default function SearchBar({ setter }) {
     let input = useRef("");
